@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_color">
+
+    <ImageView
+        android:id="@+id/iv_fragmentLyricsArtistCover"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/music_1_artist" />
+
+    <TextView
+        android:id="@+id/tv_framentLyricsMusicArtist"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Reza Sadeghi"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_fragmentLyricsArtistCover"
+        app:layout_constraintStart_toEndOf="@+id/iv_fragmentLyricsArtistCover"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_fragmentLyricsMusicName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Chehel Gis"
+        app:layout_constraintStart_toStartOf="@+id/tv_framentLyricsMusicArtist"
+        app:layout_constraintTop_toBottomOf="@+id/tv_framentLyricsMusicArtist" />
+
+    <TextView
+        android:id="@+id/tv_fragmentLyricsText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="سلام و وقت بخیر برای متن آهنگ مورد نظر بزودی اضافه میشود سپاس از همراهی شما.... "
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fragmentLyricsMusicName" />
+
+    <ImageView
+        android:id="@+id/iv_fragmentLyricsBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:rotation="180"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back_black_24dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

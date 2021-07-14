@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_color">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/musicPlayer_rv_artistIv"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:roundedCornerRadius="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:actualImageResource="@drawable/music_2_cover" />
+
+    <TextView
+        android:id="@+id/musicPlayer_rv_artistNameTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/musicPlayer_rv_musicNameTv"
+        app:layout_constraintEnd_toStartOf="@+id/animationViewMusic"
+        app:layout_constraintStart_toEndOf="@+id/musicPlayer_rv_artistIv"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Reza Sadegi" />
+
+    <TextView
+        android:id="@+id/musicPlayer_rv_musicNameTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/animationViewMusic"
+        app:layout_constraintStart_toStartOf="@+id/musicPlayer_rv_artistNameTv"
+        app:layout_constraintTop_toBottomOf="@+id/musicPlayer_rv_artistNameTv"
+        tools:text="Tanha tarin" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationViewMusic"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="8dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/music_effect" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
